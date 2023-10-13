@@ -15,7 +15,7 @@ spec:
         app: devops
     spec:
       containers:
-      - name: devops-test-2023
+      - name: mon-api-container
         image: devops-test-2023
         ports:
         - containerPort: 3001
