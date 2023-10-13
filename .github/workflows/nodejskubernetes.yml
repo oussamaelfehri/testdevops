@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-test-2023
+  labels:
+    app: devops
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops
+  template:
+    metadata:
+      labels:
+        app: devops
+    spec:
+      containers:
+      - name: devops-test-2023
+        image: devops-test-2023
+        ports:
+        - containerPort: 3001
